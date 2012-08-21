@@ -1,0 +1,11 @@
+require 'spec_helper'
+
+describe "StaticPages" do
+  describe "GET /static_pages" do
+    it "works! (now write some real specs)" do
+      visit root_path
+      save_and_open_page
+      page.should have_selector('h1', text: 'Sample App')
+    end
+  end
+end
