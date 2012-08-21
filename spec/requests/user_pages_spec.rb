@@ -7,8 +7,8 @@ describe "User pages" do
     before { visit signup_path }
     let(:heading) { 'Sign up' }
     let(:page_title) { heading }    
-    
+
     it { should have_selector 'h1', text: heading }
-    it { should have_selector 'title', full_title(heading) }
+    it { should have_selector 'title', text: full_title(heading) }
   end
 end
